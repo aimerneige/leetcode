@@ -1,0 +1,7 @@
+{
+    "go.formatTool": "gofmt",
+    "go.lintTool": "golint",
+    "[go]": {
+        "editor.formatOnSave": true
+    }
+}
