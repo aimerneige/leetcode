@@ -10,15 +10,12 @@ package code
 func twoSum(nums []int, target int) []int {
 	indexMap := make(map[int]int)
 	for i, num := range nums {
-		indexMap[num] = i
-	}
-	for i, num := range nums {
 		require := target - num
-		if v, ok := indexMap[require]; ok && v != i {
+		if v, ok := indexMap[require]; ok {
 			return []int{i, v}
 		}
+		indexMap[num] = i
 	}
-
 	return []int{}
 }
 
