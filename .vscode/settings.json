@@ -1,7 +1,8 @@
 {
-    "go.formatTool": "gofmt",
-    "go.lintTool": "golint",
-    "[go]": {
-        "editor.formatOnSave": true
-    }
+  "go.formatTool": "gofmt",
+  "go.lintTool": "golint",
+  "[go]": {
+    "editor.formatOnSave": true
+  },
+  "markdown.preview.fontSize": 20,
 }
