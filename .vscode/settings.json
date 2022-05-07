@@ -9,6 +9,7 @@
   "markdown.preview.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'Operator Mono', 'Droid Sans Mono', 'monospace'",
   "leetcode.defaultLanguage": "golang",
   "cSpell.words": [
-    "nums"
+    "nums",
+    "strs"
   ]
 }
