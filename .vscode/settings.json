@@ -4,9 +4,9 @@
   "[go]": {
     "editor.formatOnSave": true
   },
-  "markdown.preview.fontSize": 20,
+  "markdown.preview.fontSize": 26,
   "markdown.preview.lineHeight": 1.4,
-  "markdown.preview.fontFamily": "'CaskaydiaCove Nerd Font Mono', 'Operator Mono', 'Droid Sans Mono', 'monospace'",
+  "markdown.preview.fontFamily": "'Ubuntu Mono', 'CaskaydiaCove Nerd Font Mono', 'Operator Mono', 'Droid Sans Mono', 'monospace'",
   "leetcode.defaultLanguage": "golang",
   "cSpell.words": [
     "nums",
