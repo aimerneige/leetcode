@@ -9,23 +9,17 @@ package code
 
 // @lc code=start
 func maxSubArray(nums []int) int {
-	maxSub := nums[0]
-	curSum := 0
-	for _, n := range nums {
-		if curSum < 0 {
-			curSum = 0
+	max := nums[0]
+	for i := 0; i < len(nums); i++ {
+		sum := 0
+		for j := i; j < len(nums); j++ {
+			sum += nums[j]
+			if sum > max {
+				max = sum
+			}
 		}
-		curSum += n
-		maxSub = max(curSum, maxSub)
 	}
-	return maxSub
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
+	return max
 }
 
 // @lc code=end
