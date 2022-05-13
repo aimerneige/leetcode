@@ -14,19 +14,17 @@ func lengthOfLastWord(s string) int {
 	length := 0
 	runes := []rune(s)
 	find := false
-	for i := 0; i < len(s); i++ {
+	for i := len(s) - 1; i >= 0; i-- {
 		if runes[i] == ' ' && !find {
 			continue
 		}
 		if runes[i] != ' ' && !find {
 			find = true
-			length = 0
 			length++
 			continue
 		}
 		if runes[i] == ' ' && find {
-			find = false
-			continue
+			break
 		}
 		if runes[i] != ' ' && find {
 			length++
