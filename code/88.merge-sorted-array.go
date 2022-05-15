@@ -21,12 +21,6 @@ func merge(nums1 []int, m int, nums2 []int, n int) {
 		}
 		i--
 	}
-	if i1 >= 0 {
-		for ; i >= 0; i-- {
-			nums1[i] = nums1[i1]
-			i1--
-		}
-	}
 	if i2 >= 0 {
 		for ; i >= 0; i-- {
 			nums1[i] = nums2[i2]
