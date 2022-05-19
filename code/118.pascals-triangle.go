@@ -9,11 +9,8 @@ package code
 // @lc code=start
 func generate(numRows int) [][]int {
 	result := make([][]int, numRows)
-	for i := 0; i < numRows; i++ {
-		if i == 0 {
-			result[0] = []int{1}
-			continue
-		}
+	result[0] = []int{1}
+	for i := 1; i < numRows; i++ {
 		t := make([]int, i+1)
 		for j := 0; j < i+1; j++ {
 			if j == 0 || j == i {
